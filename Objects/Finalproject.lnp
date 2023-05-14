@@ -1,0 +1,15 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+"C:\ti\tivaware_c_series_2_1_4_178\driverlib\rvmdk\driverlib.lib"
+".\objects\startup_tm4c123.o"
+".\objects\system_tm4c123.o"
+".\objects\freertos_evr.o"
+".\objects\list.o"
+".\objects\port.o"
+".\objects\heap_4.o"
+".\objects\queue.o"
+".\objects\tasks.o"
+--strict --scatter ".\Objects\Finalproject.sct"
+-entry Reset_Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\Finalproject.map" -o .\Objects\Finalproject.axf

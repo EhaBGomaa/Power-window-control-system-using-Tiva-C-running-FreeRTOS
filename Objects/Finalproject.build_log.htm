@@ -1,0 +1,1572 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Abdu Aws, ZeroCode, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  D:\Programs\Keil\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+E:\college\Senior 1\Semester 2\Real Time Embedded\Project\Finalproject.uvprojx
+Project File Date:  05/13/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'D:\Programs\Keil\ARM\ARMCLANG\Bin'
+Rebuild target 'Target 1'
+compiling freertos_evr.c...
+compiling list.c...
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(234): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxCriticalNesting == ~0UL );
+                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(300): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( configMAX_SYSCALL_INTERRUPT_PRIORITY );
+                                                        ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(305): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( portCPUID != portCORTEX_M7_r0p1_ID );
+                                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(306): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( portCPUID != portCORTEX_M7_r0p0_ID );
+                                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(356): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( ( portMAX_PRIGROUP_BITS - ulMaxPRIGROUPValue ) == configPRIO_BITS );
+                                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(367): warning: implicit conversion loses integer precision: 'volatile uint32_t' (aka 'volatile unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+        *pucFirstUserPriorityRegister = ulOriginalPriority;
+                                      ~ ^~~~~~~~~~~~~~~~~~
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(409): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxCriticalNesting == 1000UL );
+                                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(425): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( portNVIC_INT_CTRL_REG & portVECTACTIVE_MASK ) == 0 );
+                                                                            ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(432): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxCriticalNesting );
+                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(820): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( ucCurrentPriority >= ucMaxSysCallPriority );
+                                                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F/port.c(836): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( portAIRCR_REG & portPRIORITY_GROUP_MASK ) <= ulMaxPRIGROUPValue );
+                                                                                         ^
+11 warnings generated.
+compiling port.c...
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/MemMang/heap_4.c(220): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        configASSERT( ( ( ( size_t ) pxNewBlockLink ) & portBYTE_ALIGNMENT_MASK ) == 0 );
+                                                                                                        ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/MemMang/heap_4.c(284): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( ( ( ( size_t ) pvReturn ) & ( size_t ) portBYTE_ALIGNMENT_MASK ) == 0 );
+                                                                                         ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/MemMang/heap_4.c(303): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( heapBLOCK_IS_ALLOCATED( pxLink ) != 0 );
+                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/MemMang/heap_4.c(304): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxLink->pxNextFreeBlock == NULL );
+                                                       ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/MemMang/heap_4.c(414): warning: cast from 'uint8_t *' (aka 'unsigned char *') to 'BlockLink_t *' (aka 'struct A_BLOCK_LINK *') increases required alignment from 1 to 4 [-Wcast-align]
+    pxFirstFreeBlock = ( BlockLink_t * ) pucAlignedHeap;
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+5 warnings generated.
+compiling heap_4.c...
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(13): warning: In file included from...
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  union {
+  ^
+44 warnings generated.
+compiling system_TM4C123.c...
+assembling startup_TM4C123.s...
+main.c(8): warning: In file included from...
+C:/ti/tivaware_c_series_2_1_4_178\driverlib/gpio.c(354): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    ui8Pin = 1 << ui8Pin;
+           ~ ~~^~~~~~~~~
+C:/ti/tivaware_c_series_2_1_4_178\driverlib/gpio.c(440): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                   (HWREG(ui32Port + GPIO_O_SI) & ~(0x01)));
+                                                                ~ ^~~~~~~
+C:/ti/tivaware_c_series_2_1_4_178\driverlib/gpio.c(473): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    ui8Pin = 1 << ui8Pin;
+           ~ ~~^~~~~~~~~
+C:/ti/tivaware_c_series_2_1_4_178\driverlib/gpio.c(588): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                           ~(0x3 << (2 * ui8Bit)));
+                                           ^~~~~~~~~~~~~~~~~~~~~~
+C:/ti/tivaware_c_series_2_1_4_178\driverlib/gpio.c(704): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+    ui8Pin = (1 << ui8Pin);
+           ~  ~~^~~~~~~~~
+C:/ti/tivaware_c_series_2_1_4_178\driverlib/gpio.c(1115): warning: implicit conversion changes signedness: 'volatile uint32_t' (aka 'volatile unsigned int') to 'int32_t' (aka 'int') [-Wsign-conversion]
+    return(HWREG(ui32Port + (GPIO_O_DATA + (ui8Pins << 2))));
+    ~~~~~~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_types.h(49): note: expanded from macro 'HWREG'
+        (*((volatile uint32_t *)(x)))
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+main.c(8): warning: In file included from...
+C:/ti/tivaware_c_series_2_1_4_178\driverlib/gpio.c(1115): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    return(HWREG(ui32Port + (GPIO_O_DATA + (ui8Pins << 2))));
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_types.h(49): note: expanded from macro 'HWREG'
+        (*((volatile uint32_t *)(x)))
+                                 ^
+main.c(8): warning: In file included from...
+C:/ti/tivaware_c_series_2_1_4_178\driverlib/gpio.c(1147): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    HWREG(ui32Port + (GPIO_O_DATA + (ui8Pins << 2))) = ui8Val;
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_types.h(49): note: expanded from macro 'HWREG'
+        (*((volatile uint32_t *)(x)))
+                                 ^
+main.c(8): warning: In file included from...
+C:/ti/tivaware_c_series_2_1_4_178\driverlib/gpio.c(2497): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+                                      ~(0xf << ui32Shift)) |
+                                      ^~~~~~~~~~~~~~~~~~~
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(48): warning: 'INT_GPIOA' macro redefined [-Wmacro-redefined]
+#define INT_GPIOA               16          // GPIO Port A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(370): note: previous definition is here
+#define INT_GPIOA               INT_CONCAT(INT_GPIOA_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(49): warning: 'INT_GPIOB' macro redefined [-Wmacro-redefined]
+#define INT_GPIOB               17          // GPIO Port B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(371): note: previous definition is here
+#define INT_GPIOB               INT_CONCAT(INT_GPIOB_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(50): warning: 'INT_GPIOC' macro redefined [-Wmacro-redefined]
+#define INT_GPIOC               18          // GPIO Port C
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(372): note: previous definition is here
+#define INT_GPIOC               INT_CONCAT(INT_GPIOC_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(51): warning: 'INT_GPIOD' macro redefined [-Wmacro-redefined]
+#define INT_GPIOD               19          // GPIO Port D
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(373): note: previous definition is here
+#define INT_GPIOD               INT_CONCAT(INT_GPIOD_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(52): warning: 'INT_GPIOE' macro redefined [-Wmacro-redefined]
+#define INT_GPIOE               20          // GPIO Port E
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(374): note: previous definition is here
+#define INT_GPIOE               INT_CONCAT(INT_GPIOE_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(53): warning: 'INT_UART0' macro redefined [-Wmacro-redefined]
+#define INT_UART0               21          // UART0
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(451): note: previous definition is here
+#define INT_UART0               INT_CONCAT(INT_UART0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(54): warning: 'INT_UART1' macro redefined [-Wmacro-redefined]
+#define INT_UART1               22          // UART1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(452): note: previous definition is here
+#define INT_UART1               INT_CONCAT(INT_UART1_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(55): warning: 'INT_SSI0' macro redefined [-Wmacro-redefined]
+#define INT_SSI0                23          // SSI0
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(428): note: previous definition is here
+#define INT_SSI0                INT_CONCAT(INT_SSI0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(56): warning: 'INT_I2C0' macro redefined [-Wmacro-redefined]
+#define INT_I2C0                24          // I2C0
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(403): note: previous definition is here
+#define INT_I2C0                INT_CONCAT(INT_I2C0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(57): warning: 'INT_PWM0_FAULT' macro redefined [-Wmacro-redefined]
+#define INT_PWM0_FAULT          25          // PWM0 Fault
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(419): note: previous definition is here
+#define INT_PWM0_FAULT          INT_CONCAT(INT_PWM0_FAULT_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(58): warning: 'INT_PWM0_0' macro redefined [-Wmacro-redefined]
+#define INT_PWM0_0              26          // PWM0 Generator 0
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(415): note: previous definition is here
+#define INT_PWM0_0              INT_CONCAT(INT_PWM0_0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(59): warning: 'INT_PWM0_1' macro redefined [-Wmacro-redefined]
+#define INT_PWM0_1              27          // PWM0 Generator 1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(416): note: previous definition is here
+#define INT_PWM0_1              INT_CONCAT(INT_PWM0_1_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(60): warning: 'INT_PWM0_2' macro redefined [-Wmacro-redefined]
+#define INT_PWM0_2              28          // PWM0 Generator 2
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(417): note: previous definition is here
+#define INT_PWM0_2              INT_CONCAT(INT_PWM0_2_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(61): warning: 'INT_QEI0' macro redefined [-Wmacro-redefined]
+#define INT_QEI0                29          // QEI0
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(425): note: previous definition is here
+#define INT_QEI0                INT_CONCAT(INT_QEI0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(62): warning: 'INT_ADC0SS0' macro redefined [-Wmacro-redefined]
+#define INT_ADC0SS0             30          // ADC0 Sequence 0
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(352): note: previous definition is here
+#define INT_ADC0SS0             INT_CONCAT(INT_ADC0SS0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(63): warning: 'INT_ADC0SS1' macro redefined [-Wmacro-redefined]
+#define INT_ADC0SS1             31          // ADC0 Sequence 1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(353): note: previous definition is here
+#define INT_ADC0SS1             INT_CONCAT(INT_ADC0SS1_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(64): warning: 'INT_ADC0SS2' macro redefined [-Wmacro-redefined]
+#define INT_ADC0SS2             32          // ADC0 Sequence 2
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(354): note: previous definition is here
+#define INT_ADC0SS2             INT_CONCAT(INT_ADC0SS2_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(65): warning: 'INT_ADC0SS3' macro redefined [-Wmacro-redefined]
+#define INT_ADC0SS3             33          // ADC0 Sequence 3
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(355): note: previous definition is here
+#define INT_ADC0SS3             INT_CONCAT(INT_ADC0SS3_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(66): warning: 'INT_WATCHDOG' macro redefined [-Wmacro-redefined]
+#define INT_WATCHDOG            34          // Watchdog Timers 0 and 1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(462): note: previous definition is here
+#define INT_WATCHDOG            INT_CONCAT(INT_WATCHDOG_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(67): warning: 'INT_TIMER0A' macro redefined [-Wmacro-redefined]
+#define INT_TIMER0A             35          // 16/32-Bit Timer 0A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(435): note: previous definition is here
+#define INT_TIMER0A             INT_CONCAT(INT_TIMER0A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(68): warning: 'INT_TIMER0B' macro redefined [-Wmacro-redefined]
+#define INT_TIMER0B             36          // 16/32-Bit Timer 0B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(436): note: previous definition is here
+#define INT_TIMER0B             INT_CONCAT(INT_TIMER0B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(69): warning: 'INT_TIMER1A' macro redefined [-Wmacro-redefined]
+#define INT_TIMER1A             37          // 16/32-Bit Timer 1A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(437): note: previous definition is here
+#define INT_TIMER1A             INT_CONCAT(INT_TIMER1A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(70): warning: 'INT_TIMER1B' macro redefined [-Wmacro-redefined]
+#define INT_TIMER1B             38          // 16/32-Bit Timer 1B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(438): note: previous definition is here
+#define INT_TIMER1B             INT_CONCAT(INT_TIMER1B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(71): warning: 'INT_TIMER2A' macro redefined [-Wmacro-redefined]
+#define INT_TIMER2A             39          // 16/32-Bit Timer 2A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(439): note: previous definition is here
+#define INT_TIMER2A             INT_CONCAT(INT_TIMER2A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(72): warning: 'INT_TIMER2B' macro redefined [-Wmacro-redefined]
+#define INT_TIMER2B             40          // 16/32-Bit Timer 2B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(440): note: previous definition is here
+#define INT_TIMER2B             INT_CONCAT(INT_TIMER2B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(73): warning: 'INT_COMP0' macro redefined [-Wmacro-redefined]
+#define INT_COMP0               41          // Analog Comparator 0
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(363): note: previous definition is here
+#define INT_COMP0               INT_CONCAT(INT_COMP0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(74): warning: 'INT_COMP1' macro redefined [-Wmacro-redefined]
+#define INT_COMP1               42          // Analog Comparator 1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(364): note: previous definition is here
+#define INT_COMP1               INT_CONCAT(INT_COMP1_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(75): warning: 'INT_SYSCTL' macro redefined [-Wmacro-redefined]
+#define INT_SYSCTL              44          // System Control
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(432): note: previous definition is here
+#define INT_SYSCTL              INT_CONCAT(INT_SYSCTL_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(76): warning: 'INT_FLASH' macro redefined [-Wmacro-redefined]
+#define INT_FLASH               45          // Flash Memory Control and EEPROM
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(369): note: previous definition is here
+#define INT_FLASH               INT_CONCAT(INT_FLASH_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(78): warning: 'INT_GPIOF' macro redefined [-Wmacro-redefined]
+#define INT_GPIOF               46          // GPIO Port F
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(375): note: previous definition is here
+#define INT_GPIOF               INT_CONCAT(INT_GPIOF_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(79): warning: 'INT_UART2' macro redefined [-Wmacro-redefined]
+#define INT_UART2               49          // UART2
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(453): note: previous definition is here
+#define INT_UART2               INT_CONCAT(INT_UART2_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(80): warning: 'INT_SSI1' macro redefined [-Wmacro-redefined]
+#define INT_SSI1                50          // SSI1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(429): note: previous definition is here
+#define INT_SSI1                INT_CONCAT(INT_SSI1_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(81): warning: 'INT_TIMER3A' macro redefined [-Wmacro-redefined]
+#define INT_TIMER3A             51          // Timer 3A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(441): note: previous definition is here
+#define INT_TIMER3A             INT_CONCAT(INT_TIMER3A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(82): warning: 'INT_TIMER3B' macro redefined [-Wmacro-redefined]
+#define INT_TIMER3B             52          // Timer 3B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(442): note: previous definition is here
+#define INT_TIMER3B             INT_CONCAT(INT_TIMER3B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(83): warning: 'INT_I2C1' macro redefined [-Wmacro-redefined]
+#define INT_I2C1                53          // I2C1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(404): note: previous definition is here
+#define INT_I2C1                INT_CONCAT(INT_I2C1_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(84): warning: 'INT_QEI1' macro redefined [-Wmacro-redefined]
+#define INT_QEI1                54          // QEI1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(426): note: previous definition is here
+#define INT_QEI1                INT_CONCAT(INT_QEI1_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(85): warning: 'INT_CAN0' macro redefined [-Wmacro-redefined]
+#define INT_CAN0                55          // CAN0
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(361): note: previous definition is here
+#define INT_CAN0                INT_CONCAT(INT_CAN0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(86): warning: 'INT_CAN1' macro redefined [-Wmacro-redefined]
+#define INT_CAN1                56          // CAN1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(362): note: previous definition is here
+#define INT_CAN1                INT_CONCAT(INT_CAN1_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(87): warning: 'INT_HIBERNATE' macro redefined [-Wmacro-redefined]
+#define INT_HIBERNATE           59          // Hibernation Module
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(402): note: previous definition is here
+#define INT_HIBERNATE           INT_CONCAT(INT_HIBERNATE_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(88): warning: 'INT_USB0' macro redefined [-Wmacro-redefined]
+#define INT_USB0                60          // USB
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(461): note: previous definition is here
+#define INT_USB0                INT_CONCAT(INT_USB0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(89): warning: 'INT_PWM0_3' macro redefined [-Wmacro-redefined]
+#define INT_PWM0_3              61          // PWM Generator 3
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(418): note: previous definition is here
+#define INT_PWM0_3              INT_CONCAT(INT_PWM0_3_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(90): warning: 'INT_UDMA' macro redefined [-Wmacro-redefined]
+#define INT_UDMA                62          // uDMA Software
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(459): note: previous definition is here
+#define INT_UDMA                INT_CONCAT(INT_UDMA_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(91): warning: 'INT_UDMAERR' macro redefined [-Wmacro-redefined]
+#define INT_UDMAERR             63          // uDMA Error
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(460): note: previous definition is here
+#define INT_UDMAERR             INT_CONCAT(INT_UDMAERR_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(92): warning: 'INT_ADC1SS0' macro redefined [-Wmacro-redefined]
+#define INT_ADC1SS0             64          // ADC1 Sequence 0
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(356): note: previous definition is here
+#define INT_ADC1SS0             INT_CONCAT(INT_ADC1SS0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(93): warning: 'INT_ADC1SS1' macro redefined [-Wmacro-redefined]
+#define INT_ADC1SS1             65          // ADC1 Sequence 1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(357): note: previous definition is here
+#define INT_ADC1SS1             INT_CONCAT(INT_ADC1SS1_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(94): warning: 'INT_ADC1SS2' macro redefined [-Wmacro-redefined]
+#define INT_ADC1SS2             66          // ADC1 Sequence 2
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(358): note: previous definition is here
+#define INT_ADC1SS2             INT_CONCAT(INT_ADC1SS2_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(95): warning: 'INT_ADC1SS3' macro redefined [-Wmacro-redefined]
+#define INT_ADC1SS3             67          // ADC1 Sequence 3
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(359): note: previous definition is here
+#define INT_ADC1SS3             INT_CONCAT(INT_ADC1SS3_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(96): warning: 'INT_SSI2' macro redefined [-Wmacro-redefined]
+#define INT_SSI2                73          // SSI2
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(430): note: previous definition is here
+#define INT_SSI2                INT_CONCAT(INT_SSI2_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(97): warning: 'INT_SSI3' macro redefined [-Wmacro-redefined]
+#define INT_SSI3                74          // SSI3
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(431): note: previous definition is here
+#define INT_SSI3                INT_CONCAT(INT_SSI3_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(98): warning: 'INT_UART3' macro redefined [-Wmacro-redefined]
+#define INT_UART3               75          // UART3
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(454): note: previous definition is here
+#define INT_UART3               INT_CONCAT(INT_UART3_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(99): warning: 'INT_UART4' macro redefined [-Wmacro-redefined]
+#define INT_UART4               76          // UART4
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(455): note: previous definition is here
+#define INT_UART4               INT_CONCAT(INT_UART4_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(100): warning: 'INT_UART5' macro redefined [-Wmacro-redefined]
+#define INT_UART5               77          // UART5
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(456): note: previous definition is here
+#define INT_UART5               INT_CONCAT(INT_UART5_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(101): warning: 'INT_UART6' macro redefined [-Wmacro-redefined]
+#define INT_UART6               78          // UART6
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(457): note: previous definition is here
+#define INT_UART6               INT_CONCAT(INT_UART6_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(102): warning: 'INT_UART7' macro redefined [-Wmacro-redefined]
+#define INT_UART7               79          // UART7
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(458): note: previous definition is here
+#define INT_UART7               INT_CONCAT(INT_UART7_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(103): warning: 'INT_I2C2' macro redefined [-Wmacro-redefined]
+#define INT_I2C2                84          // I2C2
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(405): note: previous definition is here
+#define INT_I2C2                INT_CONCAT(INT_I2C2_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(104): warning: 'INT_I2C3' macro redefined [-Wmacro-redefined]
+#define INT_I2C3                85          // I2C3
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(406): note: previous definition is here
+#define INT_I2C3                INT_CONCAT(INT_I2C3_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(105): warning: 'INT_TIMER4A' macro redefined [-Wmacro-redefined]
+#define INT_TIMER4A             86          // 16/32-Bit Timer 4A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(443): note: previous definition is here
+#define INT_TIMER4A             INT_CONCAT(INT_TIMER4A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(106): warning: 'INT_TIMER4B' macro redefined [-Wmacro-redefined]
+#define INT_TIMER4B             87          // 16/32-Bit Timer 4B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(444): note: previous definition is here
+#define INT_TIMER4B             INT_CONCAT(INT_TIMER4B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(107): warning: 'INT_TIMER5A' macro redefined [-Wmacro-redefined]
+#define INT_TIMER5A             108         // 16/32-Bit Timer 5A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(445): note: previous definition is here
+#define INT_TIMER5A             INT_CONCAT(INT_TIMER5A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(108): warning: 'INT_TIMER5B' macro redefined [-Wmacro-redefined]
+#define INT_TIMER5B             109         // 16/32-Bit Timer 5B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(446): note: previous definition is here
+#define INT_TIMER5B             INT_CONCAT(INT_TIMER5B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(109): warning: 'INT_WTIMER0A' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER0A            110         // 32/64-Bit Timer 0A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(463): note: previous definition is here
+#define INT_WTIMER0A            INT_CONCAT(INT_WTIMER0A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(110): warning: 'INT_WTIMER0B' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER0B            111         // 32/64-Bit Timer 0B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(464): note: previous definition is here
+#define INT_WTIMER0B            INT_CONCAT(INT_WTIMER0B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(111): warning: 'INT_WTIMER1A' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER1A            112         // 32/64-Bit Timer 1A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(465): note: previous definition is here
+#define INT_WTIMER1A            INT_CONCAT(INT_WTIMER1A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(112): warning: 'INT_WTIMER1B' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER1B            113         // 32/64-Bit Timer 1B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(466): note: previous definition is here
+#define INT_WTIMER1B            INT_CONCAT(INT_WTIMER1B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(113): warning: 'INT_WTIMER2A' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER2A            114         // 32/64-Bit Timer 2A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(467): note: previous definition is here
+#define INT_WTIMER2A            INT_CONCAT(INT_WTIMER2A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(114): warning: 'INT_WTIMER2B' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER2B            115         // 32/64-Bit Timer 2B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(468): note: previous definition is here
+#define INT_WTIMER2B            INT_CONCAT(INT_WTIMER2B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(115): warning: 'INT_WTIMER3A' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER3A            116         // 32/64-Bit Timer 3A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(469): note: previous definition is here
+#define INT_WTIMER3A            INT_CONCAT(INT_WTIMER3A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(116): warning: 'INT_WTIMER3B' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER3B            117         // 32/64-Bit Timer 3B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(470): note: previous definition is here
+#define INT_WTIMER3B            INT_CONCAT(INT_WTIMER3B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(117): warning: 'INT_WTIMER4A' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER4A            118         // 32/64-Bit Timer 4A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(471): note: previous definition is here
+#define INT_WTIMER4A            INT_CONCAT(INT_WTIMER4A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(118): warning: 'INT_WTIMER4B' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER4B            119         // 32/64-Bit Timer 4B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(472): note: previous definition is here
+#define INT_WTIMER4B            INT_CONCAT(INT_WTIMER4B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(119): warning: 'INT_WTIMER5A' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER5A            120         // 32/64-Bit Timer 5A
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(473): note: previous definition is here
+#define INT_WTIMER5A            INT_CONCAT(INT_WTIMER5A_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(120): warning: 'INT_WTIMER5B' macro redefined [-Wmacro-redefined]
+#define INT_WTIMER5B            121         // 32/64-Bit Timer 5B
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(474): note: previous definition is here
+#define INT_WTIMER5B            INT_CONCAT(INT_WTIMER5B_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(121): warning: 'INT_SYSEXC' macro redefined [-Wmacro-redefined]
+#define INT_SYSEXC              122         // System Exception (imprecise)
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(433): note: previous definition is here
+#define INT_SYSEXC              INT_CONCAT(INT_SYSEXC_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(122): warning: 'INT_PWM1_0' macro redefined [-Wmacro-redefined]
+#define INT_PWM1_0              150         // PWM1 Generator 0
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(420): note: previous definition is here
+#define INT_PWM1_0              INT_CONCAT(INT_PWM1_0_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(123): warning: 'INT_PWM1_1' macro redefined [-Wmacro-redefined]
+#define INT_PWM1_1              151         // PWM1 Generator 1
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(421): note: previous definition is here
+#define INT_PWM1_1              INT_CONCAT(INT_PWM1_1_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(124): warning: 'INT_PWM1_2' macro redefined [-Wmacro-redefined]
+#define INT_PWM1_2              152         // PWM1 Generator 2
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(422): note: previous definition is here
+#define INT_PWM1_2              INT_CONCAT(INT_PWM1_2_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(125): warning: 'INT_PWM1_3' macro redefined [-Wmacro-redefined]
+#define INT_PWM1_3              153         // PWM1 Generator 3
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(423): note: previous definition is here
+#define INT_PWM1_3              INT_CONCAT(INT_PWM1_3_, INT_DEVICE_CLASS)
+        ^
+main.c(12): warning: In file included from...
+./tm4c123gh6pm.h(126): warning: 'INT_PWM1_FAULT' macro redefined [-Wmacro-redefined]
+#define INT_PWM1_FAULT          154         // PWM1 Fault
+        ^
+C:/ti/tivaware_c_series_2_1_4_178\inc/hw_ints.h(424): note: previous definition is here
+#define INT_PWM1_FAULT          INT_CONCAT(INT_PWM1_FAULT_, INT_DEVICE_CLASS)
+        ^
+main.c(13): warning: In file included from...
+./buttons.h(7): warning: no newline at end of file [-Wnewline-eof]
+};
+  ^
+main.c(81): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                uint32_t bit = Get_Bit(GPIO_PORTB_DATA_R, 4);
+                                                            ^
+main.c(90): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        bit = Get_Bit(GPIO_PORTC_DATA_R, i);
+                                                           ^
+main.c(92): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                bit = Get_Bit(GPIO_PORTD_DATA_R, 2);
+                                                                   ^
+main.c(95): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                bit = Get_Bit(GPIO_PORTD_DATA_R, 3);
+                                                                   ^
+main.c(106): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                bit = Get_Bit(GPIO_PORTB_DATA_R, 0);
+                                                   ^
+main.c(109): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        while(bit == 0){bit = Get_Bit(GPIO_PORTB_DATA_R, 0);}
+                                                                           ^
+main.c(112): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                bit = Get_Bit(GPIO_PORTB_DATA_R, 1);
+                                                   ^
+main.c(115): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        while(bit == 0){bit = Get_Bit(GPIO_PORTB_DATA_R, 1);}
+                                                                           ^
+main.c(75): warning: unused parameter 'p' [-Wunused-parameter]
+void CheckButtons(void *p){
+                        ^
+main.c(75): warning: function 'CheckButtons' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void CheckButtons(void *p){
+                          ^
+main.c(124): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                Clear_Bit(GPIO_PORTD_DATA_R, 0);
+                                               ^
+main.c(125): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                Set_Bit(GPIO_PORTD_DATA_R, 1);
+                                             ^
+main.c(127): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                Clear_Bit(GPIO_PORTD_DATA_R, 0);
+                                               ^
+main.c(128): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                Clear_Bit(GPIO_PORTD_DATA_R, 1);
+                                               ^
+main.c(120): warning: unused parameter 'p' [-Wunused-parameter]
+void jamHandler(void *p){
+                      ^
+main.c(120): warning: function 'jamHandler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void jamHandler(void *p){
+                        ^
+main.c(136): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        portBASE_TYPE xHigherPriorityTaskWoken = ( ( BaseType_t ) 2 );
+                      ^
+main.c(145): warning: unused parameter 'p' [-Wunused-parameter]
+void autoModeHandler(void *p){
+                           ^
+main.c(145): warning: function 'autoModeHandler' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+void autoModeHandler(void *p){
+                             ^
+main.c(157): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        portBASE_TYPE xHigherPriorityTaskWoken = ( ( BaseType_t ) 2 );
+                      ^
+main.c(173): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        uint32_t upDriverBit = Get_Bit(GPIO_PORTD_DATA_R, 2);
+                                                            ^
+main.c(174): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        uint32_t upPassengerBit = Get_Bit(GPIO_PORTC_DATA_R, 6);
+                                                               ^
+main.c(174): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        uint32_t upPassengerBit = Get_Bit(GPIO_PORTC_DATA_R, 6);
+                 ^
+main.c(172): warning: no previous prototype for function 'checkAutoUp' [-Wmissing-prototypes]
+bool checkAutoUp( void ){
+     ^
+main.c(172): note: declare 'static' if the function is not intended to be used outside of this translation unit
+bool checkAutoUp( void ){
+^
+static 
+D:\Programs\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+main.c(181): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        uint32_t downDriverBit = Get_Bit(GPIO_PORTC_DATA_R, 5);
+                                                              ^
+main.c(182): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        uint32_t downPassengerBit = Get_Bit(GPIO_PORTD_DATA_R, 3);
+                                                                 ^
+main.c(182): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        uint32_t downPassengerBit = Get_Bit(GPIO_PORTD_DATA_R, 3);
+                 ^
+main.c(180): warning: no previous prototype for function 'checkAutoDown' [-Wmissing-prototypes]
+bool checkAutoDown( void ){
+     ^
+main.c(180): note: declare 'static' if the function is not intended to be used outside of this translation unit
+bool checkAutoDown( void ){
+^
+static 
+D:\Programs\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+    #define bool _Bool
+                 ^
+main.c(190): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                Clear_Bit(GPIO_PORTD_DATA_R, 0);
+                                               ^
+main.c(191): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                Clear_Bit(GPIO_PORTD_DATA_R, 1);
+                                               ^
+main.c(197): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                Set_Bit(GPIO_PORTD_DATA_R, 0);
+                                                             ^
+main.c(198): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                Clear_Bit(GPIO_PORTD_DATA_R, 1);
+                                                               ^
+main.c(203): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                Clear_Bit(GPIO_PORTD_DATA_R, 0);
+                                                               ^
+main.c(204): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                Set_Bit(GPIO_PORTD_DATA_R, 1);
+                                                             ^
+main.c(211): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                uint32_t bit = Get_Bit(GPIO_PORTB_DATA_R, 0);
+                                                                            ^
+main.c(214): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        while(bit == 0){bit = Get_Bit(GPIO_PORTB_DATA_R, 0);}
+                                                                                           ^
+main.c(222): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        Set_Bit(GPIO_PORTD_DATA_R, 0);
+                                                                     ^
+main.c(223): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        Clear_Bit(GPIO_PORTD_DATA_R, 1);
+                                                                       ^
+main.c(229): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                uint32_t bit = Get_Bit(GPIO_PORTB_DATA_R, 1);
+                                                                            ^
+main.c(232): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        while(bit == 0){bit = Get_Bit(GPIO_PORTB_DATA_R, 1);}
+                                                                                           ^
+main.c(240): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        Clear_Bit(GPIO_PORTD_DATA_R, 0);
+                                                                       ^
+main.c(241): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                        Set_Bit(GPIO_PORTD_DATA_R, 1);
+                                                                     ^
+main.c(249): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Clear_Bit(GPIO_PORTD_DATA_R, 0);
+                                       ^
+main.c(250): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Clear_Bit(GPIO_PORTD_DATA_R, 1);
+                                       ^
+main.c(269): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        static struct Button driverUpButton;
+                             ^
+main.c(315): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Set_Bit(GPIO_PORTF_PUR_R, 4);
+                                    ^
+main.c(322): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Set_Bit(GPIO_PORTB_PUR_R, 5);
+                                    ^
+main.c(330): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Set_Bit(GPIO_PORTB_PUR_R, 0);
+                                    ^
+main.c(331): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Set_Bit(GPIO_PORTB_PUR_R, 1);
+                                    ^
+main.c(336): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Set_Bit(GPIO_PORTB_PUR_R, 4);
+                                    ^
+main.c(341): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Set_Bit(GPIO_PORTC_PUR_R, 5);
+                                    ^
+main.c(342): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Set_Bit(GPIO_PORTC_PUR_R, 6);
+                                    ^
+main.c(346): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Set_Bit(GPIO_PORTD_PUR_R, 2);
+                                    ^
+main.c(347): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        Set_Bit(GPIO_PORTD_PUR_R, 3);
+                                    ^
+main.c(392): warning: no newline at end of file [-Wnewline-eof]
+// D1
+     ^
+143 warnings generated.
+compiling main.c...
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(302): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(329): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(355): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( xReturn != pdFAIL );
+                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(126): warning: padding struct 'struct QueueDefinition' with 2 bytes to align 'pxQueueSetContainer' [-Wpadded]
+        struct QueueDefinition * pxQueueSetContainer;
+                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(100): warning: padding size of 'struct QueueDefinition' with 3 bytes to alignment boundary [-Wpadded]
+typedef struct QueueDefinition /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(484): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( pxNewQueue );
+                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(614): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xSemaphore );
+                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(646): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xSemaphore );
+                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(673): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxMutex );
+                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(729): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxMutex );
+                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(825): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( xHandle );
+                                   ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(844): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(845): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                   ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(846): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+                                                                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(849): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(888): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                            queueYIELD_IF_USING_PREEMPTION();
+                                                            ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(907): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                                queueYIELD_IF_USING_PREEMPTION();
+                                                                ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(920): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                            queueYIELD_IF_USING_PREEMPTION();
+                                                            ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1024): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1056): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1057): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( pvItemToQueue == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                   ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1058): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( xCopyPosition == queueOVERWRITE ) && ( pxQueue->uxLength != 1 ) ) );
+                                                                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1195): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvIncrementQueueTxLock( pxQueue, cTxLock );
+                                                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1225): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1229): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue->uxItemSize == 0 );
+                                            ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1234): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( pxQueue->uxQueueType == queueQUEUE_IS_MUTEX ) && ( pxQueue->u.xSemaphore.xMutexHolder != NULL ) ) );
+                                                                                                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1361): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvIncrementQueueTxLock( pxQueue, cTxLock );
+                                                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1387): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( ( pxQueue ) );
+                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1391): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( ( pvBuffer ) == NULL ) && ( ( pxQueue )->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1396): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1425): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1485): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1533): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( ( pxQueue ) );
+                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1537): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue->uxItemSize == 0 );
+                                            ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1542): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1588): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1668): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1741): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( ( pxQueue ) );
+                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1745): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( ( pvBuffer ) == NULL ) && ( ( pxQueue )->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1750): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( !( ( xTaskGetSchedulerState() == taskSCHEDULER_SUSPENDED ) && ( xTicksToWait != 0 ) ) );
+                                                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1785): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        queueYIELD_IF_USING_PREEMPTION();
+                                                        ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1846): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1890): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1891): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                              ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1958): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvIncrementQueueRxLock( pxQueue, cRxLock );
+                                                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1983): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1984): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( !( ( pvBuffer == NULL ) && ( pxQueue->uxItemSize != ( UBaseType_t ) 0U ) ) );
+                                                                                              ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(1985): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue->uxItemSize != 0 ); /* Can't peek a semaphore. */
+                                            ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2034): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( xQueue );
+                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2051): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2068): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2079): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2425): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(2466): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxQueue );
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(3043): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueueSetContainer ); /* LCOV_EXCL_BR_LINE */
+                                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(3044): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxQueueSetContainer->uxMessagesWaiting < pxQueueSetContainer->uxLength );
+                                                                                              ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/queue.c(3076): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvIncrementQueueTxLock( pxQueueSetContainer, cTxLock );
+                                                                       ^
+57 warnings generated.
+compiling queue.c...
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(329): warning: no previous extern declaration for non-static variable 'pxCurrentTCB' [-Wmissing-variable-declarations]
+portDONT_DISCARD PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
+                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(329): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+portDONT_DISCARD PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
+                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(278): warning: padding struct 'struct tskTaskControlBlock' with 2 bytes to align 'uxTCBNumber' [-Wpadded]
+        UBaseType_t uxTCBNumber;  /*< Stores a number that increments each time a TCB is created.  It allows debuggers to determine when a task has been deleted and then recreated. */
+                    ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(255): warning: padding size of 'struct tskTaskControlBlock' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct tskTaskControlBlock       /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(376): warning: no previous extern declaration for non-static variable 'uxTopUsedPriority' [-Wmissing-variable-declarations]
+const volatile UBaseType_t uxTopUsedPriority = configMAX_PRIORITIES - 1U;
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(376): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+const volatile UBaseType_t uxTopUsedPriority = configMAX_PRIORITIES - 1U;
+               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(861): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( ( ( portPOINTER_SIZE_TYPE ) pxTopOfStack & ( portPOINTER_SIZE_TYPE ) portBYTE_ALIGNMENT_MASK ) == 0UL ) );
+                                                                                                                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(914): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxPriority < configMAX_PRIORITIES );
+                                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1084): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        prvAddTaskToReadyList( pxNewTCB );
+                                         ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1096): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            taskYIELD_IF_USING_PREEMPTION();
+                                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1125): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskRESET_READY_PRIORITY( pxTCB->uxPriority );
+                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1199): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( uxSchedulerSuspended == 0 );
+                                                         ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1200): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                portYIELD_WITHIN_API();
+                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1220): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxPreviousWakeTime );
+                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1221): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( xTimeIncrement > 0U ) );
+                                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1222): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxSchedulerSuspended == 0 );
+                                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1286): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            portYIELD_WITHIN_API();
+                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1308): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( uxSchedulerSuspended == 0 );
+                                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1333): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            portYIELD_WITHIN_API();
+                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1354): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxTCB );
+                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1514): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxNewPriority < configMAX_PRIORITIES );
+                                                            ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1644): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1653): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_IF_USING_PREEMPTION();
+                                                   ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1689): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskRESET_READY_PRIORITY( pxTCB->uxPriority );
+                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1746): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( uxSchedulerSuspended == 0 );
+                                                         ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1747): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                portYIELD_WITHIN_API();
+                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1788): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTask );
+                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1830): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTaskToResume );
+                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1845): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1853): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        taskYIELD_IF_USING_PREEMPTION();
+                                                       ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1885): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTaskToResume );
+                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(1931): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2066): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xReturn != errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY );
+                                                                        ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2181): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxSchedulerSuspended );
+                                        ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2201): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listREMOVE_ITEM( &( pxTCB->xEventListItem ) );
+                                                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2203): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listREMOVE_ITEM( &( pxTCB->xStateListItem ) );
+                                                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2204): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2267): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_IF_USING_PREEMPTION();
+                                                   ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2347): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxTCB );
+                         ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2368): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            listGET_OWNER_OF_NEXT_ENTRY( pxFirstTCB, pxList ); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2372): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                listGET_OWNER_OF_NEXT_ENTRY( pxNextTCB, pxList ); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                                                                ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2431): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( strlen( pcNameToQuery ) < configMAX_TASK_NAME_LEN );
+                                                                         ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(40): warning: In file included from...
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/include/task.h(160): warning: padding struct 'struct xTASK_STATUS' with 3 bytes to align 'uxCurrentPriority' [-Wpadded]
+    UBaseType_t uxCurrentPriority;                /* The priority at which the task was running (may be inherited) when the structure was populated. */
+                ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/include/task.h(154): warning: padding size of 'struct xTASK_STATUS' with 2 bytes to alignment boundary [-Wpadded]
+typedef struct xTASK_STATUS
+               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2568): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( xIdleTaskHandle != NULL ) );
+                                                   ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2586): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( ( xTickCount + xTicksToJump ) <= xNextTaskUnblockTime );
+                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2593): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( uxSchedulerSuspended );
+                                                ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2594): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( xTicksToJump != ( TickType_t ) 0 );
+                                                            ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2622): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxSchedulerSuspended == 0 );
+                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2647): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( pxTCB );
+                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2685): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvAddTaskToReadyList( pxTCB );
+                                              ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2743): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            taskSWITCH_DELAYED_LISTS();
+                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2793): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listREMOVE_ITEM( &( pxTCB->xStateListItem ) );
+                                                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2799): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        listREMOVE_ITEM( &( pxTCB->xEventListItem ) );
+                                                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(2808): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3062): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        taskSELECT_HIGHEST_PRIORITY_TASK(); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3086): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxEventList );
+                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3112): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxEventList );
+                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3116): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxSchedulerSuspended != 0 );
+                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3128): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    listINSERT_END( pxEventList, &( pxCurrentTCB->xEventListItem ) );
+                                                                    ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3188): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxUnblockedTCB );
+                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3189): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    listREMOVE_ITEM( &( pxUnblockedTCB->xEventListItem ) );
+                                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3193): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        listREMOVE_ITEM( &( pxUnblockedTCB->xStateListItem ) );
+                                                              ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3194): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        prvAddTaskToReadyList( pxUnblockedTCB );
+                                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3214): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        listINSERT_END( &( xPendingReadyList ), &( pxUnblockedTCB->xEventListItem ) );
+                                                                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3244): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( uxSchedulerSuspended != pdFALSE );
+                                                   ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3252): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxUnblockedTCB );
+                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3253): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    listREMOVE_ITEM( pxEventListItem );
+                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3272): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    listREMOVE_ITEM( &( pxUnblockedTCB->xStateListItem ) );
+                                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3273): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    prvAddTaskToReadyList( pxUnblockedTCB );
+                                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3288): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxTimeOut );
+                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3311): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxTimeOut );
+                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3312): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+    configASSERT( pxTicksToWait );
+                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3469): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                taskYIELD();
+                           ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3513): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    configASSERT( xNextTaskUnblockTime >= xTickCount );
+                                                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3428): warning: function 'prvIdleTask' could be declared with attribute 'noreturn' [-Wmissing-noreturn]
+{
+^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3832): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            listGET_OWNER_OF_NEXT_ENTRY( pxFirstTCB, pxList ); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(3840): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                listGET_OWNER_OF_NEXT_ENTRY( pxNextTCB, pxList ); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+                                                                ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4112): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxMutexHolderTCB );
+                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4168): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( pxTCB == pxCurrentTCB );
+                                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4169): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( pxTCB->uxMutexesHeld );
+                                                ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4202): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4248): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            configASSERT( pxTCB->uxMutexesHeld );
+                                                ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4275): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    configASSERT( pxTCB != pxCurrentTCB );
+                                                         ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4315): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                        prvAddTaskToReadyList( pxTCB );
+                                                      ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4697): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToWait < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4716): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4771): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToWait < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4795): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    portYIELD_WITHIN_API();
+                                          ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4859): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToNotify < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4860): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTaskToNotify );
+                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4913): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    configASSERT( xTickCount == ( TickType_t ) 0 );
+                                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4908): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                default:
+                ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4924): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                listREMOVE_ITEM( &( pxTCB->xStateListItem ) );
+                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4925): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                prvAddTaskToReadyList( pxTCB );
+                                              ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4928): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4950): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    taskYIELD_IF_USING_PREEMPTION();
+                                                   ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4984): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTaskToNotify );
+                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(4985): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToNotify < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5056): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    configASSERT( xTickCount == ( TickType_t ) 0 );
+                                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5051): warning: default label in switch which covers all enumeration values [-Wcovered-switch-default]
+                default:
+                ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5067): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5071): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listREMOVE_ITEM( &( pxTCB->xStateListItem ) );
+                                                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5072): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5078): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listINSERT_END( &( xPendingReadyList ), &( pxTCB->xEventListItem ) );
+                                                                                        ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5119): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( xTaskToNotify );
+                                     ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5120): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToNotify < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                               ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5158): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                configASSERT( listLIST_ITEM_CONTAINER( &( pxTCB->xEventListItem ) ) == NULL );
+                                                                                             ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5162): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listREMOVE_ITEM( &( pxTCB->xStateListItem ) );
+                                                                 ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5163): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    prvAddTaskToReadyList( pxTCB );
+                                                  ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5169): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+                    listINSERT_END( &( xPendingReadyList ), &( pxTCB->xEventListItem ) );
+                                                                                        ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5206): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+        configASSERT( uxIndexToClear < configTASK_NOTIFICATION_ARRAY_ENTRIES );
+                                                                              ^
+D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/tasks.c(5332): warning: empty expression statement has no effect; remove unnecessary ';' to silence this warning [-Wextra-semi-stmt]
+            listINSERT_END( &xSuspendedTaskList, &( pxCurrentTCB->xStateListItem ) );
+                                                                                    ^
+111 warnings generated.
+compiling tasks.c...
+linking...
+.\Objects\Finalproject.axf: Warning: L3910W: Old syntax, please use '--entry'.
+Program Size: Code=15924 RO-data=1380 RW-data=1644 ZI-data=5052  
+Finished: 0 information, 1 warning and 0 error messages.
+".\Objects\Finalproject.axf" - 0 Error(s), 372 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS-FreeRTOS.10.5.1.pack
+                ARM.CMSIS-FreeRTOS.10.5.1
+                Bundle of FreeRTOS for Cortex-M and Cortex-A
+   * Component: Config Variant: FreeRTOS Version: 10.5.1
+   * Component: Core Variant: Cortex-M Version: 10.5.1
+   * Component: Heap Variant: Heap_4 Version: 10.5.1
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil.TM4C_DFP.1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/RTOS
+  ./RTE/_Target_1
+  D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/CMSIS/RTOS2/FreeRTOS/Include
+  D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/include
+  D:/Programs/KeilPacks/ARM/CMSIS-FreeRTOS/10.5.1/Source/portable/GCC/ARM_CM4F
+  D:/Programs/KeilPacks/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/Programs/KeilPacks/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM.FreeRTOS::RTOS:Config:FreeRTOS:10.5.1
+      Include file:  Config/ARMCM/FreeRTOSConfig.h
+
+   * Component: ARM.FreeRTOS::RTOS:Core:Cortex-M:10.5.1
+      Include file:  Source/include/queue.h
+      Source file:   Source/tasks.c
+      Include file:  Source/include/task.h
+      Include file:  Source/include/semphr.h
+      Include file:  Source/include/FreeRTOS.h
+      Source file:   Source/list.c
+      Source file:   Source/queue.c
+      Source file:   Source/portable/GCC/ARM_CM4F/port.c
+      Source file:   CMSIS/RTOS2/FreeRTOS/Source/freertos_evr.c
+
+   * Component: ARM.FreeRTOS::RTOS:Heap:Heap_4:10.5.1
+      Source file:   Source/portable/MemMang/heap_4.c
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.1
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+      Include file:  Device/Include/TM4C123/TM4C123.h
+Build Time Elapsed:  00:00:11
+</pre>
+</body>
+</html>
